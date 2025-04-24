@@ -2,3 +2,4 @@ nexios
 tortoise-orm
 bcrypt
 dotenv
+asyncpg

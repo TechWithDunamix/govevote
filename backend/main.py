@@ -143,7 +143,7 @@ app.add_middleware(AuthenticationMiddleware(backend=JWTAuthBackend(authenticate_
 @app.on_startup
 async def init_db():
     from tortoise import Tortoise
-    await Tortoise.init(db_url='sqlite://db.sqlite3', modules={'models': [__name__]})
+    await Tortoise.init(db_url='postgres://neondb_owner:npg_Svs3DTO9xLer@ep-nameless-snowflake-a5buuavg-pooler.us-east-2.aws.neon.tech/neondb', modules={'models': [__name__]})
     await Tortoise.generate_schemas()
     admin_exists = await Admin.exists()
     if not admin_exists:
@@ -223,3 +223,5 @@ async def register_voter(request: Request, response: Response):
 
 
 app.mount_router(voter_router)
+
+app._setup_openapi()
