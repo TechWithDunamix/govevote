@@ -1,0 +1,4 @@
+nexios
+tortoise-orm
+bcrypt
+dotenv
