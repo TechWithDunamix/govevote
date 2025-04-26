@@ -14,13 +14,16 @@ export default function Home() {
         <div className="relative z-10 p-6 sm:p-10 md:p-16">
           {/* Top badge */}
           <div className="flex justify-center mb-8">
-            <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-6 py-2 rounded-full">
+            <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-6 py-2 rounded-full text-3xl">
               <Database className="h-5 w-5" />
-              <span className="font-bold">Anambra APC Data Management System</span>
+              <span className="font-bold ">Anambra APC Data Management System</span>
             </div>
           </div>
 
           {/* Main animated title */}
+          <div className="flex justify-center"> 
+          <Image src={"/camp.jpg"} width={100} height={100} className="w-fit h-72"/>
+          </div>
           <div className="text-center mb-12">
             <h1 className="animate-title text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 leading-tight">
               PRINCE NICHOLAS
@@ -61,7 +64,7 @@ export default function Home() {
                 development.
               </p>
               <Link href="/register" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-bold text-lg animate-pulse">
-                Join The Movement
+                Register To Join the renewed hope movement
               </Link>
             </div>
           </div>
@@ -150,7 +153,7 @@ export default function Home() {
 
           {/* Team leadership */}
           <div className="mb-12 animate-slide-up animation-delay-800">
-            <h3 className="text-2xl font-bold text-center mb-6 text-blue-800">Anambra First Team</h3>
+            <h3 className="text-2xl font-bold text-center mb-6 text-blue-800">Project Anambra First</h3>
             <div className="bg-white p-6 rounded-xl border border-blue-100">
               <div className="flex flex-col md:flex-row items-center gap-6">
                 <div className="relative w-24 h-24 rounded-full overflow-hidden border-2 border-blue-100 flex-shrink-0">
@@ -164,7 +167,7 @@ export default function Home() {
                 <div>
                   <div className="flex items-center gap-2 mb-2">
                     <Users className="h-5 w-5 text-blue-600" />
-                    <h4 className="font-bold text-lg">Hon Johnbosco Onunkwo</h4>
+                    <h4 className="font-bold text-lg">Hon Johnbosco Onunkwo (Grand Commander Anambra Youth)</h4>
                   </div>
                   <p className="text-blue-600 font-medium mb-2">Team Leader, Anambra First</p>
                   <p className="text-gray-600">
