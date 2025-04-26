@@ -25,7 +25,7 @@ export default function Home() {
           <Image src={"/camp.jpg"} width={100} height={100} className="w-fit h-72"/>
           </div>
           <div className="text-center mb-12">
-            <h1 className="animate-title text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 leading-tight">
+            <h1 className="animate-title text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 leading-tight">
               PRINCE NICHOLAS
               <br />
               UKACHUKWU
